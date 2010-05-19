@@ -1,0 +1,4 @@
+#!/bin/sh
+
+jars=`find lib -name "*.jar" -exec printf :{} ';'`
+java -cp etc:src$jars clojure.main src/cloud_build/core.clj
