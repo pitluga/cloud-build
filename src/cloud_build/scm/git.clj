@@ -5,7 +5,7 @@
     (java.util Date Calendar)))
 
 (defn- yesterday []
-  (.getTime (doto (Calendar/getInstance) (.add Calendar/HOUR -24))))
+  (.getTime (doto (Calendar/getInstance) (.add Calendar/HOUR -72))))
 
 (defn- today [] (Date.))
 
